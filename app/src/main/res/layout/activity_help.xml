@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.myapp.bipul.traceyou.HelpActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="How To Add Friends / How To Trace Friends"
+        android:textColor="@color/tabtext"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/tabtext"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Hello friends.\n this app work like your whatsapp, if your friend's mobile has this app and his/her contact number is present in your contact list then he/she will be automatically add in your friend list and you can trace him/her. \n \n
+            so you just need to install this app to your friend's family's mobile to whome you want to trace and save theare contact number in your contact list  then you can trace your friend \n\n
+Thank you and enjoy it\n\nfurther help mail me on :coding.lover101@gmail.com"
+            android:textSize="16sp"
+            android:textStyle="bold"
+           />
+
+    </LinearLayout>
+
+</RelativeLayout>

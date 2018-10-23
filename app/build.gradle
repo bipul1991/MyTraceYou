@@ -1,0 +1,89 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    /*buildToolsVersion "26.0.1"*/
+    defaultConfig {
+        applicationId "com.myapp.bipul.traceyou"
+        minSdkVersion 19
+        targetSdkVersion 27
+        versionCode 26
+        versionName "1.1.9"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation 'com.android.support:support-v4:27.1.1'
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:cardview-v7:25.3.1'
+    compile 'de.hdodenhof:circleimageview:1.3.0'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    compile 'com.mcxiaoke.volley:library:1.0.19'
+    compile 'com.google.firebase:firebase-auth:12.0.0'
+    compile 'com.google.firebase:firebase-core:12.0.0'
+    compile 'com.google.firebase:firebase-database:12.0.0'
+    implementation 'com.google.firebase:firebase-messaging:12.0.0'
+    compile 'com.google.android.gms:play-services-maps:12.0.0'
+    compile 'com.google.android.gms:play-services-location:12.0.0'
+    compile 'com.google.android.gms:play-services-ads:12.0.0'
+
+
+    compile 'com.github.aakira:expandable-layout:1.6.0@aar'
+    /* compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'*/
+    compile 'com.oguzdev:CircularFloatingActionMenu:1.0.2'
+    compile 'junit:junit:4.12'
+}
+/*dependencies {
+    compile 'com.android.support:design:25.+'
+    compile 'com.android.support:support-vector-drawable:25.+'
+}
+dependencies {
+    compile 'com.android.support.constraint:constraint-layout:+'
+}
+dependencies {
+    compile 'com.google.android.gms:play-services-maps:+'
+    compile 'com.android.support:appcompat-v7:25.+'
+    compile 'com.google.android.gms:play-services-location:+'
+}
+dependencies {
+    compile 'com.google.android.gms:play-services-maps:+'
+    compile 'com.android.support:appcompat-v7:25.+'
+}
+dependencies {
+    compile 'com.android.support.constraint:constraint-layout:+'
+}
+dependencies {
+    compile 'com.android.support.constraint:constraint-layout:+'
+}
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+
+    compile 'com.oguzdev:CircularFloatingActionMenu:1.0.2'
+}*/
+
+configurations.all {
+    resolutionStrategy {
+        force 'com.android.support:design:27.0.2'
+        force 'com.android.support:support-v4:27.0.2'
+        force 'com.android.support:appcompat-v7:27.0.2'
+    }
+}
+apply plugin: 'com.google.gms.google-services'

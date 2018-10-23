@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:id="@+id/mainLay"
+    android:background="@drawable/edit_text"
+    android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/colorLay"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profileImg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/profile"
+                    app:border_color="#008000"
+                    app:border_width="2dp" />
+
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/colorLay"
+                android:orientation="vertical"
+                android:id="@+id/itemNameLay">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tea"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/background_dark"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/nameTxt"/>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="890656579"
+                        android:id="@+id/phoneTxt"
+                        android:textSize="12sp"
+                        android:layout_marginTop="5dp"/>
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/itemNameLay"
+                        android:background="@color/cardview_dark_background"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/bordarTxt"
+                        android:layout_marginLeft="5dp"/>
+
+                    <TextView
+                        android:id="@+id/adrsTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/bordarTxt"
+                        android:layout_marginStart="5dp"
+                        android:layout_toEndOf="@+id/bordarTxt"
+                        android:layout_marginTop="5dp"
+                        android:textSize="12sp"
+                        android:text="uttar kamakhyaguri taltala gakjias sdfklkdgf dsfknnkfg fj"
+                       />
+
+                </LinearLayout>
+            </LinearLayout>
+            
+
+
+
+
+            
+          <!--  <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+                
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/background_dark"
+                    android:text="Block"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/blckBtn"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textAllCaps="false"/>
+
+            </LinearLayout>-->
+
+
+        </RelativeLayout>
+    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:ael_expanded="true"
+        android:id="@+id/expandableRL"
+        >
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/mobileTxt"
+            >
+
+
+            <Button
+                android:text="Block"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/msgBtn"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:gravity="center"
+
+               />
+
+            <Button
+                android:text="Trace Location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/locBtn"
+                android:textAllCaps="false"
+                android:gravity="center"
+                android:layout_weight="1"
+             />
+
+
+        </LinearLayout>
+
+    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+
+</LinearLayout>

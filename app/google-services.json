@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "252278236501",
+    "firebase_url": "https://location-trace-370a1.firebaseio.com",
+    "project_id": "location-trace-370a1",
+    "storage_bucket": "location-trace-370a1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:252278236501:android:67373442e2981a64",
+        "android_client_info": {
+          "package_name": "com.myapp.bipul.traceyou"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "252278236501-dianmuj35p81m2qkoin7dsd1l83llp1h.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "252278236501-dianmuj35p81m2qkoin7dsd1l83llp1h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB079NXe1c-qI3H7_PAQjT8lRbIt_EQl0o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

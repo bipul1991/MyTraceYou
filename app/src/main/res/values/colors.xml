@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5b6eac</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FCA503</color>
+    <color name="row1">#1ec0fa</color>
+    <color name="row2">#894616</color>
+    <color name="tabbg">#fafafa</color>
+    <color name="tabtext">#171718</color>
+    <color name="holo_green_light">#ff99cc00</color>
+    <color name="holo_green_dark">#ff669900</color>
+    <color name="colorGreen">#17ac0a</color>
+    <color name="green">#77b800</color>
+    <color name="error_edittext">#ed2227</color>
+
+    <color name="black_overlay">#66000000</color>
+</resources>
+
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <resources>
+        <color name="colorPrimary">@android:color/white</color>
+        <color name="colorPrimaryDark">#303F9F</color>
+        <color name="colorAccent">#FF4081</color>
+    </resources>
+    -->

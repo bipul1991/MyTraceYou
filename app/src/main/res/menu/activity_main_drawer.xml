@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+      <!--  <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Bus Service" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_notifications_black_24dp"
+            android:title="Food Service" />-->
+
+        <item
+            android:id="@+id/nav_find_friends"
+            android:icon="@drawable/ic_location"
+            android:title="Find My friends " />
+        <item
+            android:id="@+id/nav_nearby_place"
+            android:icon="@drawable/ic_location"
+            android:title="Nearby location" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_help"
+                android:icon="@drawable/ic_help"
+                android:title="Help" />
+            <item
+                android:id="@+id/nav_about_us"
+                android:icon="@drawable/ic_menu_send"
+                android:title="About us" />
+        </menu>
+    </item>
+
+</menu>
