@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.myapp.bipul.traceyou.SplashScreenActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:src="@drawable/location_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:layout_centerVertical="true"
+        android:id="@+id/logo"/>
+   <!-- <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/logo"
+        android:text="Trace You"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp"/>-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Powered By Bipul Sarkar"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+</RelativeLayout>
